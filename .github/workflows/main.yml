@@ -26,6 +26,9 @@ jobs:
           # pip install jsonschema
           pip install -r requirements.txt
 
+      - name : 서버 실행
+        run : python server.py
+
       # 4️⃣ pytest 실행
       - name: 피카츄-파이테스트 실행
         run: pytest
